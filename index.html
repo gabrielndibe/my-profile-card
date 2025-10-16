@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel's Profile Card</title>
+    <link href="./styles.css" rel="stylesheet" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+<article class="profile-card" data-testid="test-profile-card">
+    <figure  data-testid="test-user-avatar">
+    <img src="https://pbs.twimg.com/profile_images/1977649960284725248/LkdqCgHi_400x400.jpg" alt="Profile Picture" class="user-avatar" data-testid="test-user-avatar-image" />
+    <figcaption data-testid="test-user-avatar-caption">Gabriel Ndibe's Avatar</figcaption>
+    </figure>
+    <div class="profile-content" data-testid="test-user-content">
+    <h2 class="user-name" data-testid="test-user-name" aria-label="User name: Gabriel Ndibe">Gabriel Ndibe</h2>
+    <p id="user-bio" data-testid="test-user-bio">Passionate about building web applications,learning new technologies and becoming the best in my field.</p>
+    <p data-testid="test-user-time">Current Time: <span data-testid="test-user-time-value">Loading...</span> ms</p>
+
+    
+        <ul  class="social-links" data-testid="test-user-social-links">
+          <li data-testid="test-user-social-link-1">
+            <a href="https://github.com/gabrielndibe" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a>
+          </li>
+          <li data-testid="test-user-social-link-2">
+            <a href="https://x.com/statnerdgabe" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">X</a>
+          </li>
+         </ul>
+      
+
+
+   <section data-testid="test-user-hobbies">
+    <h3 data-testid="test-user-hobbies-title">Hobbies</h3>
+    <ul data-testid="test-user-hobbies-list">
+        <li data-testid="test-user-hobby-1">Coding</li>
+        <li data-testid="test-user-hobby-2">Football</li>
+        <li data-testid="test-user-hobby-3">Watching Movies</li>
+      </ul>
+   </section>
+
+   <section data-testid="test-user-dislikes">
+    <h3 data-testid="test-user-dislikes-title">Dislikes</h3>
+    <ul data-testid="test-user-dislikes-list">
+      <li data-testid="test-user-dislike-1">Cats</li>
+      <li data-testid="test-user-dislike-2">Dogs</li>
+    </ul>
+   </section>
+</div>
+</article>
+
+<script src="script.js">
+</script>
+</body>
+</html>
