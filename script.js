@@ -40,7 +40,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!message) {
           document.querySelector('[data-testid="test-contact-error-message"]').textContent = 'Message is required';
           isValid = false;
-        }
+        } else if (message.length < 10) {
+        console.log('Message validation failed: too short'); 
+        document.getElementById('message-error-message').textContent = 'Message must be at least 10 characters';
+        isValid = false;
+      }
   
        
         if (isValid) {
